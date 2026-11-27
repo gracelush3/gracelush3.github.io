@@ -210,325 +210,105 @@
     </section>
 
     <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <div class="project">
-
-            <h3>Master's Capstone Project</h3>
-
-            <p>
-                Mapping Shoreline Land Cover Change in 
-                Cable Bay, British Columbia (2020–2025) 
-                Using Sentinel-2 Imagery and Supervised 
-                Classification.
-            </p>
-
-            <p><strong>Tools:</strong> ArcGIS, Python, R, SQL</p>
-
-            <p>Project details and maps coming soon.</p>
-
+        <h2>Projects</h2>
+    
+        <p>
+            A selection of academic and applied projects showcasing
+            my experience in GIS, remote sensing, spatial analysis,
+            and geospatial programming.
+        </p>
+    
+        <div class="project-grid">
+    
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/capstone_cover.png"
+                     alt="Masters Capstone">
+    
+                <h3></h3>
+    
+                <p>
+                    Mapping Shoreline Land Cover Change in Cable Bay, 
+                    British Columbia (2020–2025) Using Sentinel-2 Imagery 
+                    and Supervised Classification.
+                </p>
+    
+                <p class="project-tools">
+                    ArcGIS Pro | QGIS | R | Maximum Likelihood Classification | Spatial Analysis
+                </p>
+    
+                <a href="projects/capstone.html">
+                    View Project →
+                </a>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/riparian_map.png"
+                     alt="Riparian area and stream network analysis map">
+    
+                <h3>Terrain Analysis and Riparian Area Management</h3>
+    
+                <p>
+                    Applied GIS hydrological modelling to delineate
+                    stream networks, watersheds, and riparian
+                    management areas in Nahmint Valley, BC.
+                </p>
+    
+                <p class="project-tools">
+                    ArcGIS Pro | Python | QGIS
+                </p>
+    
+                <a href="projects/riparian_area_analysis.html">
+                    View Project →
+                </a>
+            </div>
+    
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/Lab5output.png"
+                     alt="Geographically weighted regression results map">
+    
+                <h3>Green Space Equity and Spatial Regression</h3>
+    
+                <p>
+                    Combined Landsat imagery and census data to
+                    investigate vegetation patterns and neighbourhood
+                    characteristics across Vancouver.
+                </p>
+    
+                <p class="project-tools">
+                    ArcGIS Pro | SQL | PostGIS | GWR
+                </p>
+    
+                <a href="projects/green-space-equity.html">
+                    View Project →
+                </a>
+            </div>
+    
+            <!-- Project 4 -->
+            <div class="project-card">
+                <img src="images/R_cover.png"
+                     alt="Land cover change analysis map">
+    
+                <h3>MODIS NDVI and Forest Change Time-Series Analysis</h3>
+    
+                <p>
+                    Used R and multi-year satellite imagery to examine
+                    vegetation trends and quantify forest gain and
+                    loss over time.
+                </p>
+    
+                <p class="project-tools">
+                    R | MODIS | Landsat | NDVI | BFAST
+                </p>
+    
+                <a href="projects/time-series-analysis.html">
+                    View Project →
+                </a>
+            </div>
+    
         </div>
-
-        <div class="project">
-
-            <h3>GIS & Spatial Analysis</h3>
-
-            <p><strong>Project 1: Terrain Analysis and Riperian Area Management</strong></p>
-
-            <p><strong>Project Overview</strong></p>
-
-            <p>
-                Applied GIS and hydrological analysis techniques 
-                to delineate stream networks and evaluate riparian 
-                management areas within the Nahmint Valley, British 
-                Columbia. Using Digital Elevation Model (DEM) data, 
-                the project assessed stream characteristics to 
-                support forest management planning and identify 
-                areas requiring protection from harvesting.
-            </p>
-        
-            <p><strong>Methods & Analysis</strong></p>
-
-            <p>
-                - Processed DEM data to derive flow direction, 
-                flow accumulation, and stream networks. 
-            </p>
-            <p>
-                - Applied Strahler and Shreve stream ordering 
-                methods to classify stream segments. 
-            </p>
-            <p>
-                - Used Python scripting and spatial analysis 
-                tools to calculate stream characteristics, 
-                including length, width, and gradient. 
-            </p>
-            <p>
-                - Classified streams based on channel characteristics 
-                and fish-bearing potential.
-            </p>
-
-            <p>
-                - Generated riparian reserve and management 
-                buffers to identify areas requiring protection.
-            </p>
-            <p>
-                - Delineated watersheds and produced spatial 
-                outputs to support riparian forest management.
-            </p>
-
-            <p><strong>Tools & Technologies</strong></p>
-            <p>
-                ArcGIS Pro, QGIS, Python, Spatial Analyst, 
-                DEM Processing, Hydrological Modelling
-            </p>
-
-            <p><strong>Key Deliverables</strong></p>
-            <p>
-                Developed stream network maps, watershed 
-                delineations, and riparian management area 
-                maps to evaluate forest retention and support 
-                environmentally responsible harvesting decisions.
-            </p>
-            <div class="project-image">
-                <img src="Lab3output.png"
-                    alt="GIS terrain analysis and stream network map">
-                
-                <p class="image-caption">
-                    <strong>Figure 1.</strong> Stream network analysis and spatial outputs
-                    developed as part of the riparian management project.
-                </p>
-            </div>
-            
-            <p><strong>Project 2: Analyzing Green Equity Using 
-                Geographically Weighted Regression</strong></p>
-            
-            <p><strong>Project Overview</strong></p>
-
-            <p>
-                Investigated the spatial relationship between 
-                urban green space and neighbourhood demographic 
-                characteristics across Vancouver, British 
-                Columbia. Combined Landsat satellite imagery 
-                with 2021 Canadian Census data to assess 
-                vegetation distribution and explore potential 
-                inequalities in access to urban green space.
-            </p>
-
-            <p><strong>Methods & Analysis</strong></p>
-            <p>
-                - Used SQL and PostGIS to query, filter, 
-                and join census data with spatial 
-                dissemination area boundaries.
-            </p>
-            <p>
-                - Processed Landsat 8 imagery and calculated 
-                the Normalized Difference Vegetation Index 
-                (NDVI) to measure vegetation greenness.
-            </p>
-            <p>
-                - Applied zonal statistics to summarize 
-                vegetation characteristics across 
-                Vancouver's census dissemination areas.
-            </p>
-            <p>
-                - Used Exploratory Regression and 
-                Ordinary Least Squares (OLS) to 
-                evaluate relationships between 
-                vegetation and demographic variables.
-            </p>
-            <p>
-                - Applied Geographically Weighted Regression
-                (GWR) to examine how these relationships 
-                varied spatially across neighbourhoods.
-            </p>
-            <p>
-                - Created thematic maps to visualize 
-                standardized residuals, local R² values, 
-                and regression coefficients.
-            </p>
-            
-            <p><strong>Tools & Technologies</strong></p>
-            <p>
-                ArcGIS Pro, QGIS, PostgreSQL, PostGIS, SQL, 
-                Landsat 8, NDVI, OLS, GWR
-            </p>
-
-            <p><strong>Key Deliverables</strong></p>
-
-            <p>
-                Produced vegetation index maps, statistical
-                model comparisons, and spatial visualizations
-                of local regression results to examine 
-                geographic patterns in green space 
-                distribution and neighbourhood demographics.
-            </p>
-
-            <div class="project-image">
-                <img src="Lab5output.png"
-                    alt="GIS terrain analysis and stream network map">
-                
-                <p class="image-caption">
-                    <strong>Figure 2.</strong> Geographically Weighted Regression (GWR) 
-                    results for mean, maximum, and standard deviation 
-                    NDVI, showing the spatial distribution of standardized 
-                    residuals and local \(R^2\) values across Vancouver's 
-                    dissemination areas.
-                </p>
-            </div>
-            
-        </div>
-
-        <div class="project">
-
-            <h3>Geospatial Programming</h3>
-
-            <p><strong>Project 1: MODIS NDVI and Forest Change 
-                Time-Series Analysis in R</strong></p>
-            
-            <p><strong>Project Overview</strong></p>
-            <p>
-               Analyzed long-term vegetation and land-cover 
-                changes using satellite imagery and R 
-                programming. Used MODIS NDVI data to 
-                examine vegetation trends and detect changes
-                over time, alongside a 33-year Landsat-derived
-                land-cover dataset to quantify forest gain
-                and loss near Williams Lake, British Columbia.
-            </p>
-            <p><strong>Methods & Analysis</strong></p>
-            <p>
-                - Processed and organized multi-year 
-                MODIS NDVI raster datasets using R.
-            </p>
-            <p>
-                - Analyzed vegetation patterns using 
-                median NDVI calculations and regional
-                time-series summaries.
-            </p>
-            <p>
-                - Applied the BFAST change detection 
-                algorithm to identify significant 
-                changes in vegetation trends.
-            </p>
-            <p>
-                - Processed 33 years of land-cover 
-                classifications to examine changes in
-                forested areas.
-            </p>
-            <p>
-                - Reclassified land-cover data into 
-                forested and non-forested categories.
-            </p>
-            <p>
-                - Calculated annual forest gain, forest 
-                loss, and net change in forest area.
-            </p>
-            <p>
-                - Created visualizations using ggplot2 
-                to communicate temporal patterns in 
-                vegetation and forest cover.
-            </p>
-
-            <p><strong>Key Visual Outputs</strong></p>
-            <p>
-            
-            <div class="project-image">
-                <img src="changedetection_plot.png"
-                    alt="forested area change map">
-                
-                <p class="image-caption">
-                    <strong>Figure 3.</strong> Comparison of classified 
-                    land-cover maps from 1984 and 2016 near Williams Lake,
-                    British Columbia, illustrating changes in the spatial 
-                    distribution of vegetation, forest cover, and other 
-                    land-cover types over the 32-year study period.
-                </p>
-            </div>
-            
-            <div class="project-image">
-                <img src="netchange_plot1.png"
-                    alt="Net change Plot">
-                
-                <p class="image-caption">
-                    <strong>Figure 4.</strong> Net change (ha) of forested area over time. 
-                </p>
-            </div>
-
-            <div class="project-image">
-                <img src="forestchange_plot.png"
-                    alt="forested area change plot">
-                
-                <p class="image-caption">
-                    <strong>Figure 5.</strong> Bar graph showing the forested area 
-                    gain (green) and loss (red) over time.
-                </p>
-            </div>
-            </p>
-
-            <p><strong>Code Examples</strong></p>
-            <div class="project-image">
-                <img src="NDVI_processing_code.png"
-                    alt="Processing_code_image">
-                
-                <p class="image-caption">
-                    <strong>Figure 6.</strong> R code used to process the 
-                    MODIS NDVI raster time series and calculate median 
-                    vegetation index values across the study period.
-                </p>
-            </div>
-
-            <div class="project-image">
-                <img src="reclass_code.png"
-                    alt="reclassification_code_image">
-                
-                <p class="image-caption">
-                    <strong>Figure 7.</strong> R code demonstrating the 
-                    reclassification of annual land-cover data into 
-                    forested and non-forested categories to assess 
-                    changes in forest cover over time.
-                </p>
-            </div>
-
-            <div class="project-image">
-                <img src="net_change_code.png"
-                    alt="Net_forest_code">
-                
-                <p class="image-caption">
-                    <strong>Figure 8.</strong> R code used to calculate 
-                    annual forest gain, forest loss, and net forest change 
-                    from a multi-year land-cover dataset.
-                </p>
-            </div>
-            
-            <p><strong>Tools & Technologies</strong></p>
-            <p>
-                R, terra, sf, dplyr, tidyr, ggplot2, lubridate, 
-                MODIS, Landsat, NDVI, BFAST
-            </p>
-
-            <p><strong>Key Deliverables</strong></p>
-
-            <p>
-                - Median NDVI raster map.
-            </p>
-            <p>
-                - Monthly NDVI time-series visualization.
-            </p>
-            <p>
-                - BFAST vegetation change detection plots.
-            </p>
-            <p>
-                - Land-cover comparison maps (1984–2016).
-            </p>
-            <p>
-                - Annual forest gain and loss analysis.
-            </p>
-            <p>
-                - Forest area change visualizations.
-            </p>
-
-        </div>
-
     </section>
 
     <section id="education">
