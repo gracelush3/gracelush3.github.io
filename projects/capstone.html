@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Space Equity | Grace Lush</title>
+
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Green Space Equity and Spatial Regression</h1>
+        <p>GIS | Remote Sensing | Geospatial Analysis</p>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Project Overview</h2>
+
+            <p>
+                Investigated the spatial relationship between urban
+                green space and neighbourhood demographic characteristics
+                across Vancouver, British Columbia. Combined Landsat
+                satellite imagery with 2021 Canadian Census data to
+                assess vegetation distribution and explore potential
+                inequalities in access to urban green space.
+            </p>
+        </section>
+
+        <section>
+            <h2>Methods & Analysis</h2>
+
+            <ul>
+                <li>Used SQL and PostGIS to query, filter, and join census data with spatial dissemination area boundaries.</li>
+                <li>Processed Landsat 8 imagery and calculated the Normalized Difference Vegetation Index (NDVI).</li>
+                <li>Applied zonal statistics to summarize vegetation characteristics across census dissemination areas.</li>
+                <li>Used Exploratory Regression and Ordinary Least Squares (OLS) to evaluate relationships between vegetation and demographic variables.</li>
+                <li>Applied Geographically Weighted Regression (GWR) to examine how these relationships varied spatially.</li>
+                <li>Created thematic maps showing standardized residuals, local R² values, and regression coefficients.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Key Visual Outputs</h2>
+
+            <h3>NDVI Analysis</h3>
+            <div class="project-image">
+                <img src="../Lab5output.png"
+                     alt="NDVI map of Vancouver"
+                     class="project-image">
+    
+                <p class="image-caption">
+                    <strong>Figure 1. </strong> Geographically Weighted Regression (GWR) 
+                        results for mean, maximum, and standard deviation 
+                        NDVI, showing the spatial distribution of standardized 
+                        residuals and local \(R^2\) values across Vancouver's 
+                        dissemination areas.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Tools & Technologies</h2>
+            <p>
+                ArcGIS Pro | QGIS | PostgreSQL | PostGIS | SQL |
+                Landsat 8 | NDVI | OLS | GWR
+            </p>
+        </section>
+
+        <section>
+            <h2>Key Deliverables</h2>
+            <p>
+                Produced vegetation index maps, statistical model
+                comparisons, and spatial visualizations of local
+                regression results to examine geographic patterns
+                in green space distribution and neighbourhood
+                demographics.
+            </p>
+        </section>
+
+        <p><a href="../index.html">← Back to Homepage</a></p>
+
+    </main>
+
+</body>
+</html>
