@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Green Space Equity | Grace Lush</title>
+    <title>Forest Change Time-Series Analysis | Grace Lush</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
@@ -14,8 +14,8 @@
 <body>
 
     <header>
-        <h1>Green Space Equity and Spatial Regression</h1>
-        <p>GIS | Remote Sensing | Geospatial Analysis</p>
+        <h1>MODIS NDVI and Forest Change Time-Series Analysis</h1>
+        <p>R | MODIS | Landsat | NDVI | BFAST</p>
     </header>
 
     <nav>
@@ -28,12 +28,13 @@
             <h2>Project Overview</h2>
 
             <p>
-                Investigated the spatial relationship between urban
-                green space and neighbourhood demographic characteristics
-                across Vancouver, British Columbia. Combined Landsat
-                satellite imagery with 2021 Canadian Census data to
-                assess vegetation distribution and explore potential
-                inequalities in access to urban green space.
+                Analyzed long-term vegetation and land-cover 
+                changes using satellite imagery and R 
+                programming. Used MODIS NDVI data to 
+                examine vegetation trends and detect changes
+                over time, alongside a 33-year Landsat-derived
+                land-cover dataset to quantify forest gain
+                and loss near Williams Lake, British Columbia.
             </p>
         </section>
 
@@ -41,30 +42,49 @@
             <h2>Methods & Analysis</h2>
 
             <ul>
-                <li>Used SQL and PostGIS to query, filter, and join census data with spatial dissemination area boundaries.</li>
-                <li>Processed Landsat 8 imagery and calculated the Normalized Difference Vegetation Index (NDVI).</li>
-                <li>Applied zonal statistics to summarize vegetation characteristics across census dissemination areas.</li>
-                <li>Used Exploratory Regression and Ordinary Least Squares (OLS) to evaluate relationships between vegetation and demographic variables.</li>
-                <li>Applied Geographically Weighted Regression (GWR) to examine how these relationships varied spatially.</li>
-                <li>Created thematic maps showing standardized residuals, local R² values, and regression coefficients.</li>
+                <li>Processed and organized multi-year 
+                    MODIS NDVI raster datasets using R.</li>
+                <li>Analyzed vegetation patterns using 
+                    median NDVI calculations and regional
+                    time-series summaries</li>
+                <li>Applied the BFAST change detection
+                    algorithm to identify significant 
+                    changes in vegetation trends.</li>
+                <li>Processed 33 years of land-cover
+                    classifications to examine changes in
+                    forested areas.</li>
+                <li>Reclassified land-cover data into
+                    forested and non-forested categories.</li>
+                <li>Calculated annual forest gain, forest
+                    loss, and net change in forest area.</li>
+                <li>Created visualizations using ggplot2
+                    to communicate temporal patterns in 
+                    vegetation and forest cover.</li>
             </ul>
         </section>
 
         <section>
             <h2>Key Visual Outputs</h2>
 
-            <h3>NDVI Analysis</h3>
             <div class="project-image">
-                <img src="../Lab5output.png"
-                     alt="NDVI map of Vancouver"
+                <img src="../netchange_plot1.png"
+                     alt="Net Change Plot"
                      class="project-image">
     
                 <p class="image-caption">
-                    <strong>Figure 1. </strong> Geographically Weighted Regression (GWR) 
-                        results for mean, maximum, and standard deviation 
-                        NDVI, showing the spatial distribution of standardized 
-                        residuals and local \(R^2\) values across Vancouver's 
-                        dissemination areas.
+                    <strong>Figure 1. </strong> Net change 
+                    (ha) of forested area over time.
+                </p>
+            </div>
+
+            <div class="project-image">
+                <img src="../forestchange_plot.png"
+                     alt="Forested Area Change Plot"
+                     class="project-image">
+    
+                <p class="image-caption">
+                    <strong>Figure 2. </strong>Bar graph showing the forested area 
+                    gain (green) and loss (red) over time.
                 </p>
             </div>
         </section>
